@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="155.33dp">
+
+        <Space
+            android:id="@+id/space_01"
+            android:layout_width="13.00dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"/>
+
+        <Space
+            android:id="@+id/space_02"
+            android:layout_width="13.00dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:id="@+id/linear_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="155.33dp"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@id/space_01"
+            android:layout_toStartOf="@id/space_02"
+            android:background="@drawable/img_ticket_off">
+
+            <Space
+                android:layout_width="2.50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true" />
+
+
+            <ImageView
+                android:id="@+id/image_coupon"
+                android:layout_width="70.00dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/textview_coupon_name"
+                android:layout_width="214.33dp"
+                android:layout_height="match_parent"
+                android:text="test"
+                android:fontFamily="@font/notosans"
+                android:gravity="center_vertical"
+                android:paddingLeft="12.67dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="15.33dp"
+                android:layout_gravity="center"/>
+
+
+            <Button
+                android:id="@+id/button_coupon"
+                android:layout_width="52.67dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/notosans"
+                android:layout_weight="1"
+                android:textSize="15.33dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6.67dp" />
+
+</LinearLayout>

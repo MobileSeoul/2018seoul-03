@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout_buystamp"
+    tools:context="kr.co.company.jjigawesome.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e7e5e5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_buystamp"
+            android:layout_width="match_parent"
+            android:layout_height="68.33dp"
+            android:background="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button_buystamp_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/btn_back" />
+
+            <TextView
+                android:id="@+id/textview_buystamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/notosans"
+                android:text="나의 스탬프"
+                android:textColor="#000000"
+                android:textSize="15.33dp" />
+
+            <Button
+                android:id="@+id/button_buystamp_qrcode"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18.67dp"
+                android:layout_toLeftOf="@id/button_buystamp_menu"
+                android:background="@drawable/btn_qrcode" />
+
+            <Button
+                android:id="@+id/button_buystamp_menu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="22.00dp"
+                android:background="@drawable/btn_menu" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12.67dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_buystamp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_drawer" />
+</android.support.v4.widget.DrawerLayout>
